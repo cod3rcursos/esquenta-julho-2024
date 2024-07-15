@@ -1,0 +1,26 @@
+GET http://localhost:3000/usuario
+
+###
+GET http://localhost:3000/usuario/1
+
+###
+DELETE http://localhost:3000/usuario/2
+
+###
+POST http://localhost:3000/usuario
+content-type: application/json
+
+{
+    "nome": "Roberto Pereira Filho",
+    "email": "robertopf@formacao.dev",
+    "senha": "65432100"
+}
+
+###
+PATCH http://localhost:3000/usuario/1
+content-type: application/json
+
+{
+    "nome": "Leonardo Moura Leitão",
+    "email": "leonardoml@formacao.dev"
+}
